@@ -1,5 +1,5 @@
 # Write Up
-Using dnSpy to inspect ReMe.dll file.  Exporting to Visual Studio 2017 project. When inspecting this part of the code stands out as it holds the encrypted password/flag.
+Using dnSpy to inspect ReMe.dll file.  Exporting to Visual Studio 2017 project. When inspecting, the following part of the code stands out, as it holds the encrypted password/flag.
 ```csharp
 bool flag5 = args[0] != StringEncryption.Decrypt("D/T9XRgUcKDjgXEldEzeEsVjIcqUTl7047pPaw7DZ9I=");
 			if (flag5)
