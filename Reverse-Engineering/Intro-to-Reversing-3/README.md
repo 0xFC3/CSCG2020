@@ -16,3 +16,5 @@ for i in crypt_pass:
     x += 1    
 print(real_pass)
 ```
+
+Connect to server and enter password to retrieve flag.
