@@ -9,3 +9,5 @@ Flag: %s
 Thats not the password!
 ./flag
 ```
+
+Connect to server and enter password to retrieve flag.
