@@ -1,10 +1,10 @@
 # Writeup
-Stegsolve to find the password: 
+When looking at the different channels of the picture with Stegsolve for example, one can find a password: 
 ```
 s33_m3_1f_y0u_c4n
 ```
-Binwalk to extract files from the challenge file. 7zip to unzip 4903C.zip.
+Binwalk is always a great tool, to look if the image file has more files hidden in it. And in this case, it does spit out the zip archive 4903C.zip.  This file can be unzipped with 7zip.
 ```
 7z e 4903C.zip
 ```
---> enter password --> flag is extracted.
+But it asks for a password, which we have :) --> enter password --> flag is extracted.
