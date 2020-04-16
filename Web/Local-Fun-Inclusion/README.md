@@ -1,4 +1,5 @@
-# Write Up
+
+# Writeup
 
 Website = http://lfi.hax1.allesctf.net:8081/
 
@@ -19,3 +20,5 @@ Now this image can simply be uploaded and used to execute commands on the server
 http://lfi.hax1.allesctf.net:8081/index.php?site=uploads/<imagename>&cmd=<command>
 ```
 After executing the ***ls*** command, you find out that a flag.php file exists, which can be looked at by executing ***cat flag.php***. The flag can then be seen in burp.
+# Prevention
+To prevent this kind of exploit, a whitelist can be put into place to only allow certain files to be included. In this case the whtelist should consist of ***index.php***, ***upload.php*** and ***view.php***. 
