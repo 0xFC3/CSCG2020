@@ -1,5 +1,9 @@
-# Write Up
-strings on rev1 leaks password.
+# Writeup
+As the password is in the binary as plaintext, it can be retrieved by the following command.
+```
+strings rev1
+```
+-->
 ```
 []A\A]A^A_
 Give me your password: 
@@ -10,4 +14,6 @@ Thats not the password!
 ./flag
 ```
 
-Connect to server and enter password to retrieve flag.
+Connect to the server and enter the password to retrieve the flag.
+# Prevention
+The real password should be hashed and stored like that in the binary. The entered password should then be hashed with the same algorithm and compared to the real hash.
